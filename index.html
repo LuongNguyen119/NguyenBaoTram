@@ -14,6 +14,27 @@
 
 <body>
 
+  <!-- Preview Modal -->
+  <div class="preview-modal" id="previewModal">
+    <div class="preview-modal__overlay" onclick="closePreview()"></div>
+    <div class="preview-modal__container">
+      <div class="preview-modal__header">
+        <h3 class="preview-modal__title" id="previewTitle">Xem nội dung</h3>
+        <button class="preview-modal__close" onclick="closePreview()">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <div class="preview-modal__content" id="previewContent">
+        <!-- Nội dung sẽ được load vào đây -->
+      </div>
+      <div class="preview-modal__footer">
+        <a href="" class="action-btn action-btn--secondary" id="previewDownload" download>
+          <i class="bi bi-download"></i> Tải xuống file
+        </a>
+      </div>
+    </div>
+  </div>
+
   <!-- ========== TOP NAVIGATION ========== -->
   <header>
     <nav class="topnav">
@@ -744,90 +765,90 @@
           </div>
         </div>
         <div class="documents-grid">
-          <a href="document/Bài 1 - cns.docx" class="document-card" download>
+          <a href="document/Bài 1 - cns.pdf" class="document-card" target="_blank">
             <div class="document-card__icon">
-              <i class="bi bi-file-earmark-word"></i>
+              <i class="bi bi-file-earmark-pdf"></i>
             </div>
             <div class="document-card__info">
               <h4 class="document-card__title">Bài 1 - CNS</h4>
               <div class="document-card__meta">
                 <i class="bi bi-file-earmark"></i>
-                <span>DOCX • Máy tính và thiết bị ngoại vi</span>
+                <span>PDF • Máy tính và thiết bị ngoại vi</span>
               </div>
             </div>
             <div class="document-card__arrow">
               <i class="bi bi-download"></i>
             </div>
           </a>
-          <a href="document/Bài 2 - cns.docx" class="document-card" download>
+          <a href="document/Bài 2 - cns.pdf" class="document-card" target="_blank">
             <div class="document-card__icon">
-              <i class="bi bi-file-earmark-word"></i>
+              <i class="bi bi-file-earmark-pdf"></i>
             </div>
             <div class="document-card__info">
               <h4 class="document-card__title">Bài 2 - CNS</h4>
               <div class="document-card__meta">
                 <i class="bi bi-file-earmark"></i>
-                <span>DOCX • Khai thác dữ liệu</span>
+                <span>PDF • Khai thác dữ liệu</span>
               </div>
             </div>
             <div class="document-card__arrow">
               <i class="bi bi-download"></i>
             </div>
           </a>
-          <a href="document/Bài 3 - cns.docx" class="document-card" download>
+          <a href="document/Bài 3 - cns.pdf" class="document-card" target="_blank">
             <div class="document-card__icon">
-              <i class="bi bi-file-earmark-word"></i>
+              <i class="bi bi-file-earmark-pdf"></i>
             </div>
             <div class="document-card__info">
               <h4 class="document-card__title">Bài 3 - CNS</h4>
               <div class="document-card__meta">
                 <i class="bi bi-file-earmark"></i>
-                <span>DOCX • Tổng quan về AI</span>
+                <span>PDF • Tổng quan về AI</span>
               </div>
             </div>
             <div class="document-card__arrow">
               <i class="bi bi-download"></i>
             </div>
           </a>
-          <a href="document/Bài 4 - cns.docx" class="document-card" download>
+          <a href="document/Bài 4 - cns.pdf" class="document-card" target="_blank">
             <div class="document-card__icon">
-              <i class="bi bi-file-earmark-word"></i>
+              <i class="bi bi-file-earmark-pdf"></i>
             </div>
             <div class="document-card__info">
               <h4 class="document-card__title">Bài 4 - CNS</h4>
               <div class="document-card__meta">
                 <i class="bi bi-file-earmark"></i>
-                <span>DOCX • Giao tiếp và hợp tác số</span>
+                <span>PDF • Giao tiếp và hợp tác số</span>
               </div>
             </div>
             <div class="document-card__arrow">
               <i class="bi bi-download"></i>
             </div>
           </a>
-          <a href="document/Bài 5 - cns.docx" class="document-card" download>
+          <a href="document/Bài 5 - cns.pdf" class="document-card" target="_blank">
             <div class="document-card__icon">
-              <i class="bi bi-file-earmark-word"></i>
+              <i class="bi bi-file-earmark-pdf"></i>
             </div>
             <div class="document-card__info">
               <h4 class="document-card__title">Bài 5 - CNS</h4>
               <div class="document-card__meta">
                 <i class="bi bi-file-earmark"></i>
-                <span>DOCX • Sáng tạo nội dung số</span>
+                <span>PDF • Sáng tạo nội dung số</span>
               </div>
             </div>
             <div class="document-card__arrow">
               <i class="bi bi-download"></i>
             </div>
           </a>
-          <a href="document/Bài 6 - cns.docx" class="document-card" download>
+          <a href="document/Bài 6 - cns.pdf" class="document-card" target="_blank">
             <div class="document-card__icon">
-              <i class="bi bi-file-earmark-word"></i>
+              <i class="bi bi-file-earmark-pdf"></i>
             </div>
             <div class="document-card__info">
               <h4 class="document-card__title">Bài 6 - CNS</h4>
               <div class="document-card__meta">
                 <i class="bi bi-file-earmark"></i>
-                <span>DOCX • An toàn và liêm chính</span>
+                <span>PDF • An toàn và liêm chính</span>
               </div>
             </div>
             <div class="document-card__arrow">
@@ -871,7 +892,7 @@
     const projectData = {
       1: {
         title: 'Bài 1: Máy tính và thiết bị ngoại vi',
-        docPath: 'document/Bài 1 - cns.docx',
+        docPath: 'document/Bài 1 - cns.pdf',
         content: `
           <p><strong>Sinh viên:</strong> 25011436 – Nguyễn Bảo Trâm</p>
           <h3>Đề bài: Thao tác cơ bản với tệp tin và thư mục</h3>
@@ -890,7 +911,7 @@
       },
       2: {
         title: 'Bài 2: Khai thác dữ liệu và thông tin',
-        docPath: 'document/Bài 2 - cns.docx',
+        docPath: 'document/Bài 2 - cns.pdf',
         content: `
           <p><strong>BÁO CÁO KỸ NĂNG TÌM KIẾM VÀ ĐÁNH GIÁ THÔNG TIN HỌC THUẬT</strong></p>
           <p><strong>Chủ đề:</strong> Tác động của AI đến động lực học tập của sinh viên đại học</p>
@@ -926,7 +947,7 @@
       },
       3: {
         title: 'Bài 3: Tổng quan về Trí tuệ nhân tạo',
-        docPath: 'document/Bài 3 - cns.docx',
+        docPath: 'document/Bài 3 - cns.pdf',
         content: `
           <p><strong>Sinh viên:</strong> 25011436 – Nguyễn Bảo Trâm</p>
           <h3>Đề bài: Viết Prompt hiệu quả cho các tác vụ học tập</h3>
@@ -954,7 +975,7 @@
       },
       4: {
         title: 'Bài 4: Giao tiếp và hợp tác trong môi trường số',
-        docPath: 'document/Bài 4 - cns.docx',
+        docPath: 'document/Bài 4 - cns.pdf',
         content: `
           <p><strong>MSV:</strong> 25011436 | <strong>Họ tên:</strong> Nguyễn Bảo Trâm</p>
           <h3>Đề bài: Sử dụng công cụ hợp tác trực tuyến nhóm</h3>
@@ -984,7 +1005,7 @@
       },
       5: {
         title: 'Bài 5: Sáng tạo nội dung số',
-        docPath: 'document/Bài 5 - cns.docx',
+        docPath: 'document/Bài 5 - cns.pdf',
         content: `
           <p><strong>Họ tên:</strong> Nguyễn Bảo Trâm | <strong>MSV:</strong> 25011436</p>
           <h3>Dự án: Infographic "Hiểu đúng về Rác thải điện tử (E-waste)"</h3>
@@ -1013,7 +1034,7 @@
       },
       6: {
         title: 'Bài 6: An toàn và liêm chính học thuật',
-        docPath: 'document/Bài 6 - cns.docx',
+        docPath: 'document/Bài 6 - cns.pdf',
         content: `
           <p><strong>MSV:</strong> 25011436 | <strong>Lớp:</strong> KH.N5</p>
           <h3>Bài tập: Sử dụng AI có trách nhiệm</h3>
@@ -1051,6 +1072,11 @@
       if (data.docPath) {
         const footerActions = document.createElement('div');
         footerActions.className = 'detail-card__actions';
+
+        // Mã hóa URL để sử dụng Google Docs Viewer
+        const encodedPath = encodeURIComponent(data.docPath);
+        const googleDocsUrl = `https://docs.google.com/gview?url=${encodedPath}&embedded=true`;
+
         footerActions.innerHTML = `
           <a href="${data.docPath}" class="action-btn action-btn--primary" target="_blank">
             <i class="bi bi-eye"></i> Xem nội dung
@@ -1064,6 +1090,34 @@
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
+    function openPreview(num) {
+      const data = projectData[num];
+      const modal = document.getElementById('previewModal');
+      const previewContent = document.getElementById('previewContent');
+      const previewTitle = document.getElementById('previewTitle');
+      const previewDownload = document.getElementById('previewDownload');
+
+      previewTitle.textContent = data.title;
+      previewContent.innerHTML = data.content;
+      previewDownload.href = data.docPath;
+
+      modal.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closePreview() {
+      const modal = document.getElementById('previewModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    // Đóng modal khi nhấn ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closePreview();
+      }
+    });
 
     function closeProject() {
       const grid = document.getElementById('projectsGrid');
