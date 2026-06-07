@@ -1001,6 +1001,59 @@ body {
   border-left: 3px solid var(--primary);
 }
 
+/* Action Buttons in Detail Card */
+.detail-card__actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px dashed var(--primary-light);
+  flex-wrap: wrap;
+}
+
+.action-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 24px;
+  border-radius: 14px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 180px;
+  justify-content: center;
+}
+
+.action-btn i {
+  font-size: 1.1rem;
+}
+
+.action-btn--primary {
+  background: linear-gradient(135deg, var(--primary), var(--purple));
+  color: white;
+  box-shadow: 0 4px 16px rgba(124, 58, 237, 0.35);
+}
+
+.action-btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.45);
+}
+
+.action-btn--secondary {
+  background: white;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.1);
+}
+
+.action-btn--secondary:hover {
+  background: var(--primary-light);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px rgba(124, 58, 237, 0.2);
+}
+
 /* Journey Card (Timeline) */
 .journey-card {
   background: white;

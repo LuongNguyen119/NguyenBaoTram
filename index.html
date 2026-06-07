@@ -984,6 +984,7 @@
       },
       5: {
         title: 'Bài 5: Sáng tạo nội dung số',
+        docPath: 'document/Bài 5 - cns.docx',
         content: `
           <p><strong>Họ tên:</strong> Nguyễn Bảo Trâm | <strong>MSV:</strong> 25011436</p>
           <h3>Dự án: Infographic "Hiểu đúng về Rác thải điện tử (E-waste)"</h3>
@@ -1012,6 +1013,7 @@
       },
       6: {
         title: 'Bài 6: An toàn và liêm chính học thuật',
+        docPath: 'document/Bài 6 - cns.docx',
         content: `
           <p><strong>MSV:</strong> 25011436 | <strong>Lớp:</strong> KH.N5</p>
           <h3>Bài tập: Sử dụng AI có trách nhiệm</h3>
@@ -1044,6 +1046,22 @@
       detail.style.display = 'block';
       document.getElementById('projectTitle').textContent = data.title;
       document.getElementById('projectContent').innerHTML = data.content;
+
+      // Thêm nút tài liệu ở cuối
+      if (data.docPath) {
+        const footerActions = document.createElement('div');
+        footerActions.className = 'detail-card__actions';
+        footerActions.innerHTML = `
+          <a href="${data.docPath}" class="action-btn action-btn--primary" target="_blank">
+            <i class="bi bi-eye"></i> Xem nội dung
+          </a>
+          <a href="${data.docPath}" class="action-btn action-btn--secondary" download>
+            <i class="bi bi-download"></i> Tải xuống
+          </a>
+        `;
+        document.getElementById('projectContent').appendChild(footerActions);
+      }
+
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
