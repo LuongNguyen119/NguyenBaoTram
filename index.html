@@ -732,6 +732,111 @@
         </div>
       </div>
 
+      <!-- Documents Section -->
+      <div class="documents-section">
+        <div class="documents-header">
+          <div class="documents-header__icon">
+            <i class="bi bi-folder-symlink-fill"></i>
+          </div>
+          <div class="documents-header__info">
+            <h3>Tài liệu bài tập</h3>
+            <p>Các file bài tập CNS đã hoàn thành</p>
+          </div>
+        </div>
+        <div class="documents-grid">
+          <a href="document/Bài 1 - cns.docx" class="document-card" download>
+            <div class="document-card__icon">
+              <i class="bi bi-file-earmark-word"></i>
+            </div>
+            <div class="document-card__info">
+              <h4 class="document-card__title">Bài 1 - CNS</h4>
+              <div class="document-card__meta">
+                <i class="bi bi-file-earmark"></i>
+                <span>DOCX • Máy tính và thiết bị ngoại vi</span>
+              </div>
+            </div>
+            <div class="document-card__arrow">
+              <i class="bi bi-download"></i>
+            </div>
+          </a>
+          <a href="document/Bài 2 - cns.docx" class="document-card" download>
+            <div class="document-card__icon">
+              <i class="bi bi-file-earmark-word"></i>
+            </div>
+            <div class="document-card__info">
+              <h4 class="document-card__title">Bài 2 - CNS</h4>
+              <div class="document-card__meta">
+                <i class="bi bi-file-earmark"></i>
+                <span>DOCX • Khai thác dữ liệu</span>
+              </div>
+            </div>
+            <div class="document-card__arrow">
+              <i class="bi bi-download"></i>
+            </div>
+          </a>
+          <a href="document/Bài 3 - cns.docx" class="document-card" download>
+            <div class="document-card__icon">
+              <i class="bi bi-file-earmark-word"></i>
+            </div>
+            <div class="document-card__info">
+              <h4 class="document-card__title">Bài 3 - CNS</h4>
+              <div class="document-card__meta">
+                <i class="bi bi-file-earmark"></i>
+                <span>DOCX • Tổng quan về AI</span>
+              </div>
+            </div>
+            <div class="document-card__arrow">
+              <i class="bi bi-download"></i>
+            </div>
+          </a>
+          <a href="document/Bài 4 - cns.docx" class="document-card" download>
+            <div class="document-card__icon">
+              <i class="bi bi-file-earmark-word"></i>
+            </div>
+            <div class="document-card__info">
+              <h4 class="document-card__title">Bài 4 - CNS</h4>
+              <div class="document-card__meta">
+                <i class="bi bi-file-earmark"></i>
+                <span>DOCX • Giao tiếp và hợp tác số</span>
+              </div>
+            </div>
+            <div class="document-card__arrow">
+              <i class="bi bi-download"></i>
+            </div>
+          </a>
+          <a href="document/Bài 5 - cns.docx" class="document-card" download>
+            <div class="document-card__icon">
+              <i class="bi bi-file-earmark-word"></i>
+            </div>
+            <div class="document-card__info">
+              <h4 class="document-card__title">Bài 5 - CNS</h4>
+              <div class="document-card__meta">
+                <i class="bi bi-file-earmark"></i>
+                <span>DOCX • Sáng tạo nội dung số</span>
+              </div>
+            </div>
+            <div class="document-card__arrow">
+              <i class="bi bi-download"></i>
+            </div>
+          </a>
+          <a href="document/Bài 6 - cns.docx" class="document-card" download>
+            <div class="document-card__icon">
+              <i class="bi bi-file-earmark-word"></i>
+            </div>
+            <div class="document-card__info">
+              <h4 class="document-card__title">Bài 6 - CNS</h4>
+              <div class="document-card__meta">
+                <i class="bi bi-file-earmark"></i>
+                <span>DOCX • An toàn và liêm chính</span>
+              </div>
+            </div>
+            <div class="document-card__arrow">
+              <i class="bi bi-download"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
       <!-- Conclusion -->
       <div class="conclusion-card">
         <div class="conclusion-card__icon">
@@ -766,6 +871,7 @@
     const projectData = {
       1: {
         title: 'Bài 1: Máy tính và thiết bị ngoại vi',
+        docPath: 'document/Bài 1 - cns.docx',
         content: `
           <p><strong>Sinh viên:</strong> 25011436 – Nguyễn Bảo Trâm</p>
           <h3>Đề bài: Thao tác cơ bản với tệp tin và thư mục</h3>
@@ -784,6 +890,7 @@
       },
       2: {
         title: 'Bài 2: Khai thác dữ liệu và thông tin',
+        docPath: 'document/Bài 2 - cns.docx',
         content: `
           <p><strong>BÁO CÁO KỸ NĂNG TÌM KIẾM VÀ ĐÁNH GIÁ THÔNG TIN HỌC THUẬT</strong></p>
           <p><strong>Chủ đề:</strong> Tác động của AI đến động lực học tập của sinh viên đại học</p>
@@ -819,6 +926,7 @@
       },
       3: {
         title: 'Bài 3: Tổng quan về Trí tuệ nhân tạo',
+        docPath: 'document/Bài 3 - cns.docx',
         content: `
           <p><strong>Sinh viên:</strong> 25011436 – Nguyễn Bảo Trâm</p>
           <h3>Đề bài: Viết Prompt hiệu quả cho các tác vụ học tập</h3>
@@ -846,6 +954,7 @@
       },
       4: {
         title: 'Bài 4: Giao tiếp và hợp tác trong môi trường số',
+        docPath: 'document/Bài 4 - cns.docx',
         content: `
           <p><strong>MSV:</strong> 25011436 | <strong>Họ tên:</strong> Nguyễn Bảo Trâm</p>
           <h3>Đề bài: Sử dụng công cụ hợp tác trực tuyến nhóm</h3>
