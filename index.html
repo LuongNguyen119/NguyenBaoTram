@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Portfolio – Nguyễn Bảo Trâm</title>
+  <link href="[REDACTED]" rel="stylesheet">
+  <link rel="stylesheet" href="[REDACTED]">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <!-- ========== TOP NAVIGATION ========== -->
+  <header>
+    <nav class="topnav">
+      <div class="topnav__inner">
+        <div class="topnav__brand">
+          <div class="topnav__logo">
+            <i class="bi bi-mortarboard-fill"></i>
+          </div>
+          <div class="topnav__info">
+            <h1 class="topnav__name">Nguyễn Bảo Trâm</h1>
+            <p class="topnav__role">
+              <i class="bi bi-book"></i> Khoa học Giáo dục
+              <span class="topnav__dot">•</span>
+              <i class="bi bi-building"></i> ĐHQGHN
+            </p>
+          </div>
+        </div>
+
+        <div class="topnav__tabs">
+          <button type="button" class="topnav__tab active" data-tab="home">
+            <i class="bi bi-house-heart"></i>
+            <span>Giới thiệu</span>
+          </button>
+          <button type="button" class="topnav__tab" data-tab="projects">
+            <i class="bi bi-folder-check"></i>
+            <span>Dự án</span>
+          </button>
+          <button type="button" class="topnav__tab" data-tab="summary">
+            <i class="bi bi-bar-chart-line"></i>
+            <span>Tổng kết</span>
+          </button>
+        </div>
+
+        <div class="topnav__contact">
+          <a href="mailto:nguyenbaotram@example.com" class="contact-btn" title="Gửi email">
+            <i class="bi bi-envelope-fill"></i>
+          </a>
+          <a href="#" class="contact-btn" title="Liên hệ Messenger">
+            <i class="bi bi-messenger"></i>
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main class="main">
+
+    <!-- ---------- HOME SECTION ---------- -->
+    <section id="home" class="section active">
+
+      <!-- Profile Card -->
+      <div class="profile-card">
+        <div class="profile-card__cover">
+          <div class="profile-card__avatar">
+            <i class="bi bi-person-fill"></i>
+          </div>
+        </div>
+        <div class="profile-card__body">
+          <h2 class="profile-card__name">Nguyễn Bảo Trâm</h2>
+          <p class="profile-card__desc">Sinh viên Kỹ năng số - CNS</p>
+
+          <div class="profile-card__stats">
+            <div class="stat">
+              <span class="stat__value">6</span>
+              <span class="stat__label">Bài tập</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">100%</span>
+              <span class="stat__label">Hoàn thành</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">4</span>
+              <span class="stat__label">Giai đoạn</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Info Cards -->
+      <div class="info-cards">
+        <div class="info-card">
+          <div class="info-card__icon">
+            <i class="bi bi-person-badge"></i>
+          </div>
+          <div class="info-card__content">
+            <span class="info-card__label">Họ và tên</span>
+            <span class="info-card__value">Nguyễn Bảo Trâm</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">
+            <i class="bi bi-123"></i>
+          </div>
+          <div class="info-card__content">
+            <span class="info-card__label">Mã sinh viên</span>
+            <span class="info-card__value">25011436</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">
+            <i class="bi bi-book"></i>
+          </div>
+          <div class="info-card__content">
+            <span class="info-card__label">Ngành học</span>
+            <span class="info-card__value"> Khoa học giáo dục và khác</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card__icon">
+            <i class="bi bi-music-note-beamed"></i>
+          </div>
+          <div class="info-card__content">
+            <span class="info-card__label">Sở thích</span>
+            <span class="info-card__value">Nghe nhạc</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Goals Section -->
+      <div class="section-box">
+        <div class="section-box__header">
+          <div class="section-box__icon section-box__icon--green">
+            <i class="bi bi-rocket-takeoff"></i>
+          </div>
+          <div>
+            <h3 class="section-box__title">Mục tiêu học tập</h3>
+            <p class="section-box__subtitle">Định hướng phát triển cá nhân</p>
+          </div>
+        </div>
+
+        <div class="goal-cards">
+          <div class="goal-card">
+            <div class="goal-card__icon">
+              <i class="bi bi-graduation-cap"></i>
+            </div>
+            <div class="goal-card__content">
+              <h4>Mục tiêu học tập</h4>
+              <p>Trang bị vững vàng kiến thức nền tảng về khoa học giáo dục, đồng thời tìm hiểu thêm các lĩnh vực liên
+                quan như tâm lý học, công nghệ giáo dục.</p>
+            </div>
+          </div>
+          <div class="goal-card">
+            <div class="goal-card__icon">
+              <i class="bi bi-compass"></i>
+            </div>
+            <div class="goal-card__content">
+              <h4>Định hướng phát triển</h4>
+              <p>Trở thành người làm việc trong môi trường giáo dục hoặc đào tạo, có khả năng thiết kế và tổ chức hoạt
+                động học tập sáng tạo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Goals -->
+      <div class="section-box">
+        <div class="section-box__header">
+          <div class="section-box__icon section-box__icon--purple">
+            <i class="bi bi-briefcase"></i>
+          </div>
+          <div>
+            <h3 class="section-box__title">Mục tiêu Portfolio</h3>
+            <p class="section-box__subtitle">Ý nghĩa của Digital Portfolio</p>
+          </div>
+        </div>
+
+        <div class="check-list">
+          <div class="check-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <p>Thể hiện các kỹ năng số đã được học và rèn luyện trong quá trình học tập.</p>
+          </div>
+          <div class="check-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <p>Lưu trữ có hệ thống các sản phẩm cá nhân (bài tập, dự án, ý tưởng) để dễ dàng truy cập và chia sẻ.</p>
+          </div>
+          <div class="check-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <p>Minh chứng cho sự phát triển năng lực và tư duy của bản thân qua chương trình CNS.</p>
+          </div>
+          <div class="check-item">
+            <i class="bi bi-check-circle-fill"></i>
+            <p>Tạo ấn tượng tốt với giảng viên và bạn bè về tinh thần học tập nghiêm túc.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Section -->
+      <div class="section-box">
+        <div class="section-box__header">
+          <div class="section-box__icon section-box__icon--cyan">
+            <i class="bi bi-stars"></i>
+          </div>
+          <div>
+            <h3 class="section-box__title">Kỹ năng đạt được</h3>
+            <p class="section-box__subtitle">Các kỹ năng số đã phát triển</p>
+          </div>
+        </div>
+
+        <div class="skills-list">
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <div class="skill-item__icon"><i class="bi bi-folder-fill"></i></div>
+              <div class="skill-item__info">
+                <h4>Quản lý dữ liệu</h4>
+                <p>Tổ chức và lưu trữ file hiệu quả</p>
+              </div>
+              <span class="skill-item__percent">90%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" style="--fill: 90%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <div class="skill-item__icon"><i class="bi bi-robot"></i></div>
+              <div class="skill-item__info">
+                <h4>Sử dụng AI</h4>
+                <p>Viết Prompt và khai thác AI hiệu quả</p>
+              </div>
+              <span class="skill-item__percent">85%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" style="--fill: 85%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <div class="skill-item__icon"><i class="bi bi-people-fill"></i></div>
+              <div class="skill-item__info">
+                <h4>Hợp tác trực tuyến</h4>
+                <p>Làm việc nhóm qua công cụ số</p>
+              </div>
+              <span class="skill-item__percent">80%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" style="--fill: 80%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <div class="skill-item__icon"><i class="bi bi-palette-fill"></i></div>
+              <div class="skill-item__info">
+                <h4>Sáng tạo nội dung</h4>
+                <p>Thiết kế Infographic với AI</p>
+              </div>
+              <span class="skill-item__percent">75%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" style="--fill: 75%"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-item__header">
+              <div class="skill-item__icon"><i class="bi bi-shield-lock-fill"></i></div>
+              <div class="skill-item__info">
+                <h4>An toàn & Liêm chính</h4>
+                <p>Sử dụng AI có trách nhiệm</p>
+              </div>
+              <span class="skill-item__percent">95%</span>
+            </div>
+            <div class="skill-item__bar">
+              <div class="skill-item__fill" style="--fill: 95%"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tools Section -->
+      <div class="section-box">
+        <div class="section-box__header">
+          <div class="section-box__icon section-box__icon--orange">
+            <i class="bi bi-tools"></i>
+          </div>
+          <div>
+            <h3 class="section-box__title">Công cụ đã sử dụng</h3>
+            <p class="section-box__subtitle">Các công cụ số trong học tập</p>
+          </div>
+        </div>
+
+        <div class="tools-grid">
+          <div class="tool-item">
+            <div class="tool-item__icon"><i class="bi bi-google"></i></div>
+            <span class="tool-item__name">Google Suite</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-item__icon"><i class="bi bi-trello"></i></div>
+            <span class="tool-item__name">Trello</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-item__icon"><i class="bi bi-discord"></i></div>
+            <span class="tool-item__name">Discord</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-item__icon"><i class="bi bi-robot"></i></div>
+            <span class="tool-item__name">ChatGPT</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-item__icon"><i class="bi bi-magic"></i></div>
+            <span class="tool-item__name">Canva AI</span>
+          </div>
+          <div class="tool-item">
+            <div class="tool-item__icon"><i class="bi bi-pc"></i></div>
+            <span class="tool-item__name">Windows</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Achievements Section -->
+      <div class="section-box">
+        <div class="section-box__header">
+          <div class="section-box__icon section-box__icon--warning">
+            <i class="bi bi-trophy-fill"></i>
+          </div>
+          <div>
+            <h3 class="section-box__title">Thành tích nổi bật</h3>
+            <p class="section-box__subtitle">Những thành tựu đạt được</p>
+          </div>
+        </div>
+
+        <div class="achievements-list">
+          <div class="achievement-item">
+            <div class="achievement-item__icon"><i class="bi bi-lightning-charge-fill"></i></div>
+            <div class="achievement-item__content">
+              <h4>Hoàn thành 6 bài tập CNS</h4>
+              <p>Hoàn thành xuất sắc tất cả các bài tập trong chương trình Kỹ năng số.</p>
+            </div>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-item__icon"><i class="bi bi-shield-check"></i></div>
+            <div class="achievement-item__content">
+              <h4>Cam kết liêm chính học thuật</h4>
+              <p>Nắm vững và tuân thủ 6 nguyên tắc sử dụng AI có trách nhiệm.</p>
+            </div>
+          </div>
+          <div class="achievement-item">
+            <div class="achievement-item__icon"><i class="bi bi-folder-fill"></i></div>
+            <div class="achievement-item__content">
+              <h4>Hệ thống hóa dữ liệu</h4>
+              <p>Xây dựng cấu trúc thư mục khoa học với quy tắc đặt tên chuẩn.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Learning Journey Section -->
+      <div class="section-box">
+        <div class="section-box__header">
+          <div class="section-box__icon section-box__icon--teal">
+            <i class="bi bi-compass"></i>
+          </div>
+          <div>
+            <h3 class="section-box__title">Hành trình học tập</h3>
+            <p class="section-box__subtitle">Những bước đi đầu tiên</p>
+          </div>
+        </div>
+
+        <div class="journey-steps">
+          <div class="journey-step">
+            <div class="journey-step__number">01</div>
+            <div class="journey-step__content">
+              <h4>Bắt đầu từ con số 0</h4>
+              <p>Từ một sinh viên chưa biết nhiều về công nghệ, tôi đã dần làm quen với các công cụ số cơ bản.</p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="journey-step__number">02</div>
+            <div class="journey-step__content">
+              <h4>Học cách học</h4>
+              <p>Khám phá phương pháp học tập hiệu quả với sự hỗ trợ của AI và công nghệ.</p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="journey-step__number">03</div>
+            <div class="journey-step__content">
+              <h4>Làm việc nhóm</h4>
+              <p>Trải nghiệm làm việc nhóm trực tuyến với các công cụ cộng tác.</p>
+            </div>
+          </div>
+          <div class="journey-step">
+            <div class="journey-step__number">04</div>
+            <div class="journey-step__content">
+              <h4>Sáng tạo có trách nhiệm</h4>
+              <p>Tạo ra sản phẩm số có giá trị với ý thức đạo đức và liêm chính.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About Me Section -->
+      <div class="section-box">
+        <div class="section-box__header">
+          <div class="section-box__icon section-box__icon--pink">
+            <i class="bi bi-person-hearts"></i>
+          </div>
+          <div>
+            <h3 class="section-box__title">Về tôi</h3>
+            <p class="section-box__subtitle">Sở thích và tính cách</p>
+          </div>
+        </div>
+
+        <div class="about-me-content">
+          <p>Xin chào! Tôi là <strong>Nguyễn Bảo Trâm</strong>, sinh viên năm nhất ngành <strong>Khoa học Giáo
+              dục</strong> tại Trường Đại học Giáo dục - Đại học Quốc gia Hà Nội.</p>
+          <p>Tôi đam mê khám phá các phương pháp giáo dục sáng tạo và ứng dụng công nghệ vào việc học tập. Bên cạnh đó,
+            tôi cũng yêu thích âm nhạc như một cách để cân bằng cuộc sống và tìm kiếm cảm hứng sáng tạo.</p>
+          <p>Portfolio này là nơi tôi ghi lại hành trình học tập và phát triển các kỹ năng số của mình trong suốt chương
+            trình học.</p>
+        </div>
+
+        <div class="hobbies-grid">
+          <div class="hobby-item">
+            <div class="hobby-item__icon"><i class="bi bi-music-note-beamed"></i></div>
+            <span class="hobby-item__name">Âm nhạc</span>
+          </div>
+          <div class="hobby-item">
+            <div class="hobby-item__icon"><i class="bi bi-book"></i></div>
+            <span class="hobby-item__name">Đọc sách</span>
+          </div>
+          <div class="hobby-item">
+            <div class="hobby-item__icon"><i class="bi bi-laptop"></i></div>
+            <span class="hobby-item__name">Công nghệ</span>
+          </div>
+          <div class="hobby-item">
+            <div class="hobby-item__icon"><i class="bi bi-palette"></i></div>
+            <span class="hobby-item__name">Sáng tạo</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Section -->
+      <div class="section-box section-box--contact">
+        <div class="contact-section">
+          <div class="contact-section__icon"><i class="bi bi-chat-heart-fill"></i></div>
+          <h3>Liên hệ với tôi</h3>
+          <p>Nếu bạn có câu hỏi hoặc muốn trao đổi về học tập, hãy liên hệ!</p>
+          <div class="contact-section__links">
+            <a href="mailto:nguyenbaotram@example.com" class="contact-link" title="Gửi email">
+              <i class="bi bi-envelope-fill"></i><span>Email</span>
+            </a>
+            <a href="#" class="contact-link" title="Liên hệ Messenger">
+              <i class="bi bi-messenger"></i><span>Messenger</span>
+            </a>
+            <a href="#" class="contact-link" title="Gọi điện">
+              <i class="bi bi-telephone-fill"></i><span>Điện thoại</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- PROJECTS SECTION ---------- -->
+    <section id="projects" class="section">
+      <div class="projects-grid" id="projectsGrid">
+        <div class="project-card" onclick="openProject(1)">
+          <div class="project-card__badge">01</div>
+          <div class="project-card__icon">
+            <i class="bi bi-pc-display"></i>
+          </div>
+          <h3 class="project-card__title">Máy tính và thiết bị ngoại vi</h3>
+          <p class="project-card__desc">Thao tác cơ bản với tệp tin và thư mục</p>
+          <div class="project-card__footer">
+            <span class="project-card__tag">
+              <i class="bi bi-folder2-open"></i> File System
+            </span>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openProject(2)">
+          <div class="project-card__badge">02</div>
+          <div class="project-card__icon">
+            <i class="bi bi-search"></i>
+          </div>
+          <h3 class="project-card__title">Khai thác dữ liệu và thông tin</h3>
+          <p class="project-card__desc">Tìm kiếm và đánh giá nguồn học thuật</p>
+          <div class="project-card__footer">
+            <span class="project-card__tag">
+              <i class="bi bi-search"></i> Research
+            </span>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openProject(3)">
+          <div class="project-card__badge">03</div>
+          <div class="project-card__icon">
+            <i class="bi bi-robot"></i>
+          </div>
+          <h3 class="project-card__title">Tổng quan về AI</h3>
+          <p class="project-card__desc">Viết Prompt hiệu quả cho học tập</p>
+          <div class="project-card__footer">
+            <span class="project-card__tag">
+              <i class="bi bi-lightning-charge"></i> AI
+            </span>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openProject(4)">
+          <div class="project-card__badge">04</div>
+          <div class="project-card__icon">
+            <i class="bi bi-people"></i>
+          </div>
+          <h3 class="project-card__title">Giao tiếp và hợp tác số</h3>
+          <p class="project-card__desc">Công cụ hợp tác trực tuyến nhóm</p>
+          <div class="project-card__footer">
+            <span class="project-card__tag">
+              <i class="bi bi-chat-dots"></i> Collaboration
+            </span>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openProject(5)">
+          <div class="project-card__badge">05</div>
+          <div class="project-card__icon">
+            <i class="bi bi-palette"></i>
+          </div>
+          <h3 class="project-card__title">Sáng tạo nội dung số</h3>
+          <p class="project-card__desc">Thiết kế Infographic với AI</p>
+          <div class="project-card__footer">
+            <span class="project-card__tag">
+              <i class="bi bi-magic"></i> Creative
+            </span>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+
+        <div class="project-card" onclick="openProject(6)">
+          <div class="project-card__badge">06</div>
+          <div class="project-card__icon">
+            <i class="bi bi-shield-check"></i>
+          </div>
+          <h3 class="project-card__title">An toàn và liêm chính</h3>
+          <p class="project-card__desc">Sử dụng AI có trách nhiệm</p>
+          <div class="project-card__footer">
+            <span class="project-card__tag">
+              <i class="bi bi-shield-lock"></i> Ethics
+            </span>
+            <i class="bi bi-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-detail" id="projectDetail">
+        <button type="button" class="btn-back" onclick="closeProject()">
+          <i class="bi bi-arrow-left"></i> Quay lại danh sách
+        </button>
+        <div class="detail-card">
+          <div class="detail-card__header">
+            <div class="detail-card__icon">
+              <i class="bi bi-folder-fill"></i>
+            </div>
+            <div>
+              <h2 class="detail-card__title" id="projectTitle"></h2>
+              <p class="detail-card__subtitle">Chi tiết bài tập</p>
+            </div>
+          </div>
+          <div class="detail-card__content" id="projectContent">
+            <p>Nội dung đang được cập nhật...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------- SUMMARY SECTION ---------- -->
+    <section id="summary" class="section">
+
+      <!-- Journey Timeline -->
+      <div class="journey-card">
+        <div class="journey-card__header">
+          <div class="journey-card__icon">
+            <i class="bi bi-graph-up-arrow"></i>
+          </div>
+          <div>
+            <h2 class="journey-card__title">Hành trình Kỹ năng số</h2>
+            <p class="journey-card__subtitle">Tổng kết quá trình học tập CNS</p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline__line"></div>
+
+          <div class="timeline__item">
+            <div class="timeline__marker timeline__marker--purple">
+              <i class="bi bi-1-circle-fill"></i>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__label">Giai đoạn 1</span>
+              <h4>Quản trị dữ liệu</h4>
+              <p>Tổ chức hệ thống file khoa học, áp dụng quy tắc đặt tên thống nhất và chiến lược sao lưu 3-2-1.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__marker timeline__marker--blue">
+              <i class="bi bi-2-circle-fill"></i>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__label">Giai đoạn 2</span>
+              <h4>Khai thác AI</h4>
+              <p>Nâng cao kỹ năng viết Prompt từ cơ bản đến nâng cao với Role-play và Chain-of-Thought.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__marker timeline__marker--green">
+              <i class="bi bi-3-circle-fill"></i>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__label">Giai đoạn 3</span>
+              <h4>Hợp tác số</h4>
+              <p>Sử dụng Trello, Google Docs, Drive và Discord để làm việc nhóm hiệu quả.</p>
+            </div>
+          </div>
+
+          <div class="timeline__item">
+            <div class="timeline__marker timeline__marker--orange">
+              <i class="bi bi-4-circle-fill"></i>
+            </div>
+            <div class="timeline__content">
+              <span class="timeline__label">Giai đoạn 4</span>
+              <h4>Sáng tạo & Đạo đức</h4>
+              <p>Thiết kế Infographic E-waste với AI và cam kết liêm chính học thuật.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Self Assessment Table -->
+      <div class="section-box">
+        <div class="section-box__header">
+          <div class="section-box__icon section-box__icon--teal">
+            <i class="bi bi-table"></i>
+          </div>
+          <div>
+            <h3 class="section-box__title">Bảng tự đánh giá</h3>
+            <p class="section-box__subtitle">Đối chiếu năng lực đầu kỳ và cuối kỳ</p>
+          </div>
+        </div>
+
+        <div class="assessment-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Tiêu chí</th>
+                <th>Đầu kỳ</th>
+                <th>Cuối kỳ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Quản lý dữ liệu</strong></td>
+                <td>Yếu, file lộn xộn</td>
+                <td><span class="badge badge--success">Xuất sắc</span></td>
+              </tr>
+              <tr>
+                <td><strong>Giao tiếp & Hợp tác</strong></td>
+                <td>Chỉ dùng MXH thông thường</td>
+                <td><span class="badge badge--success">Tốt</span></td>
+              </tr>
+              <tr>
+                <td><strong>Sáng tạo nội dung</strong></td>
+                <td>Soạn Word cơ bản</td>
+                <td><span class="badge badge--success">Tốt</span></td>
+              </tr>
+              <tr>
+                <td><strong>An toàn & Đạo đức</strong></td>
+                <td>Chưa hiểu về bản quyền AI</td>
+                <td><span class="badge badge--success">Xuất sắc</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Future Goals -->
+      <div class="section-box">
+        <div class="section-box__header">
+          <div class="section-box__icon section-box__icon--pink">
+            <i class="bi bi-flag"></i>
+          </div>
+          <div>
+            <h3 class="section-box__title">Định hướng tương lai</h3>
+            <p class="section-box__subtitle">Mục tiêu phát triển tiếp theo</p>
+          </div>
+        </div>
+
+        <div class="future-steps">
+          <div class="future-step">
+            <div class="future-step__number">1</div>
+            <div class="future-step__content">
+              <h4>Cập nhật AI thế hệ mới</h4>
+              <p>Tiếp tục làm chủ các mô hình AI mới để ứng dụng vào nghiên cứu khoa học.</p>
+            </div>
+          </div>
+          <div class="future-step">
+            <div class="future-step__number">2</div>
+            <div class="future-step__content">
+              <h4>Tuân thủ liêm chính học thuật</h4>
+              <p>Tuyệt đối tuân thủ 6 cam kết về sử dụng AI có trách nhiệm.</p>
+            </div>
+          </div>
+          <div class="future-step">
+            <div class="future-step__number">3</div>
+            <div class="future-step__content">
+              <h4>Chia sẻ kiến thức</h4>
+              <p>Hỗ trợ bạn bè xây dựng hệ thống quản trị dữ liệu an toàn.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Conclusion -->
+      <div class="conclusion-card">
+        <div class="conclusion-card__icon">
+          <i class="bi bi-stars"></i>
+        </div>
+        <h3>Kết luận</h3>
+        <p>Học phần Kỹ năng số đã tái định hình tư duy của tôi trong không gian số. Từ một sinh viên bỡ ngỡ, tôi đã
+          chuyển mình thành người làm chủ công cụ, biết cộng tác hiệu quả, sáng tạo có trách nhiệm và luôn thượng tôn
+          đạo đức tri thức.</p>
+        <div class="conclusion-card__highlight">
+          <i class="bi bi-mortarboard-fill"></i>
+          Những năng lực số quý báu tích lũy được sẽ là bệ phóng vững chắc cho hành trình tương lai tại ĐHQGHN.
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    // Tab Switching
+    document.querySelectorAll('.topnav__tab').forEach(tab => {
+      tab.addEventListener('click', function () {
+        document.querySelectorAll('.topnav__tab').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+        this.classList.add('active');
+        document.getElementById(this.dataset.tab).classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    // Project Data
+    const projectData = {
+      1: {
+        title: 'Bài 1: Máy tính và thiết bị ngoại vi',
+        content: `
+          <p><strong>Sinh viên:</strong> 25011436 – Nguyễn Bảo Trâm</p>
+          <h3>Đề bài: Thao tác cơ bản với tệp tin và thư mục</h3>
+          <ul>
+            <li><strong>Mở File Explorer:</strong> Nhấn Windows + E hoặc nhấp vào biểu tượng thư mục trên thanh tác vụ.</li>
+            <li><strong>Truy cập ổ đĩa/thư mục:</strong> Nhấp vào This PC, sau đó nhấp đúp vào ổ đĩa mong muốn.</li>
+            <li><strong>Tạo thư mục mới:</strong> Nhấp chuột phải → New → Folder. Đặt tên: ThucHanh_hotensinhvien.</li>
+            <li><strong>Tạo tệp tin văn bản:</strong> Nhấp chuột phải → New → Text Document. Đặt tên: GhiChu.txt.</li>
+            <li><strong>Đổi tên:</strong> Nhấp chuột phải → Rename. Đổi thành GhiChuQuanTrong.txt.</li>
+            <li><strong>Sao chép (Copy & Paste):</strong> Ctrl + C → Ctrl + V.</li>
+            <li><strong>Di chuyển (Cut & Paste):</strong> Ctrl + X → Ctrl + V.</li>
+            <li><strong>Xóa tệp tin:</strong> Nhấp chuột phải → Delete (chuyển vào Thùng rác).</li>
+            <li><strong>Khôi phục:</strong> Mở Recycle Bin → Restore.</li>
+          </ul>
+        `
+      },
+      2: {
+        title: 'Bài 2: Khai thác dữ liệu và thông tin',
+        content: `
+          <p><strong>BÁO CÁO KỸ NĂNG TÌM KIẾM VÀ ĐÁNH GIÁ THÔNG TIN HỌC THUẬT</strong></p>
+          <p><strong>Chủ đề:</strong> Tác động của AI đến động lực học tập của sinh viên đại học</p>
+
+          <h3>1. Phạm vi tìm kiếm</h3>
+          <ul>
+            <li><strong>Thời gian:</strong> 2020–2025</li>
+            <li><strong>Không gian:</strong> Giáo dục đại học quốc tế và Việt Nam</li>
+            <li><strong>Loại tài liệu:</strong> Bài báo peer-review, sách chuyên khảo, báo cáo chính sách</li>
+          </ul>
+
+          <h3>2. Cơ sở dữ liệu học thuật</h3>
+          <ul>
+            <li><strong>Google Scholar:</strong> Tìm kiếm theo trích dẫn, lọc 2021-2025</li>
+            <li><strong>Scopus:</strong> Tìm bài Q1, Q2 trong Educational Technology</li>
+            <li><strong>ERIC:</strong> Cơ sở dữ liệu giáo dục của Bộ Giáo dục Hoa Kỳ</li>
+          </ul>
+
+          <h3>3. Tạp chí khoa học</h3>
+          <ul>
+            <li><strong>Computers & Education</strong> (Elsevier, Q1)</li>
+            <li><strong>British Journal of Educational Technology</strong> (BJET, Q1)</li>
+            <li><strong>Journal of Educational Psychology</strong> (APA, Q1)</li>
+          </ul>
+
+          <h3>4. Bài học rút ra</h3>
+          <ul>
+            <li>Ưu tiên nghiên cứu thực nghiệm hoặc tổng quan hệ thống từ tạp chí Q1</li>
+            <li>Cảnh giác với preprint và báo cáo không có phản biện</li>
+            <li>Kết hợp nguồn quốc tế và trong nước với đối chiếu chéo</li>
+          </ul>
+        `
+      },
+      3: {
+        title: 'Bài 3: Tổng quan về Trí tuệ nhân tạo',
+        content: `
+          <p><strong>Sinh viên:</strong> 25011436 – Nguyễn Bảo Trâm</p>
+          <h3>Đề bài: Viết Prompt hiệu quả cho các tác vụ học tập</h3>
+
+          <h3>1. Các tác vụ được chọn</h3>
+          <ul>
+            <li><strong>Tác vụ 1:</strong> Tóm tắt tài liệu học thuật</li>
+            <li><strong>Tác vụ 2:</strong> Giải thích khái niệm phức tạp</li>
+            <li><strong>Tác vụ 3:</strong> Tạo bộ câu hỏi ôn tập (Active Recall)</li>
+          </ul>
+
+          <h3>2. Phiên bản Prompt</h3>
+          <h4>Prompt Cơ bản</h4>
+          <em>"Hãy giải thích lạm phát là gì."</em>
+
+          <h4>Prompt Cải tiến</h4>
+          <em>"Hãy giải thích khái niệm lạm phát cho sinh viên năm nhất ngành kinh tế. Nội dung bao gồm định nghĩa, nguyên nhân chính và ví dụ tại Việt Nam."</em>
+
+          <h4>Prompt Nâng cao (Role-play + Chain-of-Thought)</h4>
+          <em>"Vai trò: Giáo sư kinh tế học diễn đạt phức tạp thành đơn giản. Nhiệm vụ: Giải thích cơ chế lạm phát do 'Cầu kéo'. Quy trình: 1. Ví dụ ngôi chợ. 2. Cung và cầu. 3. Kết luận."</em>
+
+          <h3>3. Kết luận</h3>
+          <p>Prompt nâng cao hiệu quả nhất vì Role Prompting giới hạn không gian phản hồi, Chain-of-Thought ép AI tư duy logic từng bước.</p>
+        `
+      },
+      4: {
+        title: 'Bài 4: Giao tiếp và hợp tác trong môi trường số',
+        content: `
+          <p><strong>MSV:</strong> 25011436 | <strong>Họ tên:</strong> Nguyễn Bảo Trâm</p>
+          <h3>Đề bài: Sử dụng công cụ hợp tác trực tuyến nhóm</h3>
+
+          <h3>1. Bối cảnh</h3>
+          <p>Thiết kế "Cẩm nang Kỹ năng số cho sinh viên" với sự hỗ trợ của các công cụ số.</p>
+
+          <h3>2. Công cụ sử dụng</h3>
+          <ul>
+            <li><strong>Trello:</strong> Quản lý dự án theo Kanban, theo dõi tiến độ</li>
+            <li><strong>Google Docs:</strong> Soạn thảo cộng tác thời gian thực</li>
+            <li><strong>Google Drive:</strong> Lưu trữ và quản lý tệp tập trung</li>
+            <li><strong>Discord:</strong> Giao tiếp nhóm với kênh chuyên biệt</li>
+          </ul>
+
+          <h3>3. Ưu điểm</h3>
+          <ul>
+            <li>Trực quan hóa tiến độ công việc</li>
+            <li>Cộng tác thời gian thực không cần họp mặt</li>
+            <li>Tổ chức dữ liệu khoa học với quy tắc đặt tên</li>
+          </ul>
+
+          <h3>4. Thách thức & Giải pháp</h3>
+          <p><strong>Thách thức:</strong> Sự phân tán tập trung, trễ hạn, thất lạc thông tin.</p>
+          <p><strong>Giải pháp:</strong> Thiết lập hệ thống kênh Discord chuyên biệt, dùng Trello điều phối trung tâm.</p>
+        `
+      },
+      5: {
+        title: 'Bài 5: Sáng tạo nội dung số',
+        content: `
+          <p><strong>Họ tên:</strong> Nguyễn Bảo Trâm | <strong>MSV:</strong> 25011436</p>
+          <h3>Dự án: Infographic "Hiểu đúng về Rác thải điện tử (E-waste)"</h3>
+
+          <h3>1. Công cụ AI sử dụng</h3>
+          <ul>
+            <li><strong>Google Gemini:</strong> Nghiên cứu số liệu, lên dàn ý</li>
+            <li><strong>Nano Banana:</strong> Tạo hình ảnh minh họa 3D</li>
+            <li><strong>Canva AI:</strong> Bố cục và thiết kế tự động</li>
+          </ul>
+
+          <h3>2. Quy trình</h3>
+          <ul>
+            <li>Sử dụng Gemini để nghiên cứu và cập nhật số liệu mới nhất</li>
+            <li>Tạo hình ảnh 3D isometric với Nano Banana</li>
+            <li>Hoàn thiện Infographic với Canva AI</li>
+          </ul>
+
+          <h3>3. Phân tích đạo đức</h3>
+          <ul>
+            <li><strong>Bản quyền:</strong> Hình ảnh AI được học từ tác phẩm nghệ sĩ khác</li>
+            <li><strong>Minh bạch:</strong> Thêm dòng công khai sử dụng AI</li>
+            <li><strong>Kiểm chứng:</strong> Fact-check mọi nội dung AI</li>
+          </ul>
+        `
+      },
+      6: {
+        title: 'Bài 6: An toàn và liêm chính học thuật',
+        content: `
+          <p><strong>MSV:</strong> 25011436 | <strong>Lớp:</strong> KH.N5</p>
+          <h3>Bài tập: Sử dụng AI có trách nhiệm</h3>
+
+          <h3>1. Chính sách VNU</h3>
+          <p><strong>Quyết định 3499/QĐ-ĐHQGHN:</strong> Đưa học phần VNU1001 vào giảng dạy bắt buộc từ khóa 2025, nhấn mạnh sử dụng AI có trách nhiệm.</p>
+
+          <h3>2. 6 Nguyên tắc sử dụng AI</h3>
+          <ul>
+            <li><strong>Minh bạch tuyệt đối:</strong> Công khai công cụ, mục đích, phạm vi</li>
+            <li><strong>AI là công cụ:</strong> Không để AI thay thế tư duy</li>
+            <li><strong>Kiểm định bắt buộc:</strong> Fact-check mọi nội dung</li>
+            <li><strong>Tôn trọng sở hữu trí tuệ:</strong> Không vi phạm bản quyền</li>
+            <li><strong>Không dùng cho đánh giá:</strong> Không dùng AI cho bài thi</li>
+            <li><strong>Học tập liên tục:</strong> Cập nhật kiến thức AI thường xuyên</li>
+          </ul>
+
+          <h3>3. Kết luận</h3>
+          <p>Sử dụng AI đúng cách giúp tăng hiệu suất nhưng cần giữ vai trò trung tâm của con người trong tư duy phản biện và sáng tạo.</p>
+        `
+      }
+    };
+
+    function openProject(num) {
+      const grid = document.getElementById('projectsGrid');
+      const detail = document.getElementById('projectDetail');
+      const data = projectData[num];
+
+      grid.style.display = 'none';
+      detail.style.display = 'block';
+      document.getElementById('projectTitle').textContent = data.title;
+      document.getElementById('projectContent').innerHTML = data.content;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function closeProject() {
+      const grid = document.getElementById('projectsGrid');
+      const detail = document.getElementById('projectDetail');
+
+      grid.style.display = 'grid';
+      detail.style.display = 'none';
+    }
+  </script>
+</body>
+
+</html>
